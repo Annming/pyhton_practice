@@ -1,6 +1,6 @@
 #输出个人信息
 def whoami():
-    print("By 2017级 计算机科学与技术（智能物联）" + "\n" + "张津维 2017102017")
+    print("By QLNU" + "\n" + "AnMing")
     print("完成于3.30日16:24")
 
 #创建Student类，用于存放学生信息及输出查询结果
@@ -31,8 +31,8 @@ class Student:
 def Input():
     while 1:
         person = input()
-        if person == 'zjw':
-            student=zjw
+        if person == 'dm':
+            student=dm
             print("您要查询的是：")
             student.getName()
             break
@@ -71,7 +71,7 @@ def select(student):
 if __name__ == '__main__':
     whoami()
     #实例化张津维及小明两个同学
-    zjw=Student("张津维",18,100,100,99)
+    zjw=Student("大明",18,100,100,99)
     xm=Student("小明",17,80,81,60)
-    print("现有张津维及小明两位同学，请输入要查询的同学的首字母：")
+    print("现有大明及小明两位同学，请输入要查询的同学的首字母：")
     select(Input())
